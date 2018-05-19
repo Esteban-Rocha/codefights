@@ -10,6 +10,4 @@
 
 /* jshint esversion: 6 */
 
-function firstDuplicate(a: any) {
-	ñ;
-}
+function firstDuplicate(a: any) {}

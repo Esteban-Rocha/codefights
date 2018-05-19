@@ -12,9 +12,9 @@
 
 function checkPalindrome(inputString: any) {
 	// Use regex to clean up invalid chars
-	let re = /[^A-Za-z0-9]/g; // or var re = /[\W_]/g;
+	let regx = /[^A-Za-z0-9]/g;
 	// Transform string toLowerCase
-	inputString = inputString.toLowerCase().replace(re, "");
+	inputString = inputString.toLowerCase().replace(regx, "");
 
 	// Create array from inputString and reverse it
 	let reverseInputString = inputString.split("");
@@ -28,7 +28,7 @@ function checkPalindrome(inputString: any) {
 		return false;
 	}
 }
-
+// Run tests
 console.log(
 	checkPalindrome("Doc, note: I dissent. A fast never prevents a fatness. I diet on cod")
 );
