@@ -10,6 +10,12 @@
 
 /* jshint esversion: 6 */
 
+/**
+ * checkPalindrome - Given the string, check if it is a palindrome.
+ *
+ * @param       inputString: any - expected string
+ * @return      boolean
+ */
 function checkPalindrome(inputString: any) {
 	// Use regex to clean up invalid chars
 	let regx = /[^A-Za-z0-9]/g;
@@ -17,17 +23,15 @@ function checkPalindrome(inputString: any) {
 	inputString = inputString.toLowerCase().replace(regx, "");
 
 	// Create array from inputString and reverse it
-	let reverseInputString = inputString.split("");
-	reverseInputString = reverseInputString.reverse();
-	reverseInputString = reverseInputString.join("");
+	let reverseInputString = inputString
+		.split("")
+		.reverse()
+		.join("");
 
 	// Plain compare if its palindrome or not
-	if (reverseInputString === inputString) {
-		return true;
-	} else {
-		return false;
-	}
+	return reverseInputString === inputString ? true : false;
 }
+
 // Run tests
 console.log(
 	checkPalindrome("Doc, note: I dissent. A fast never prevents a fatness. I diet on cod")
