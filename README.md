@@ -28,4 +28,4 @@ TODO: Write history
 
 ## License
 
-Project under the [](LICENSE)
+Project under the [3-Clause BSD License](LICENSE)
