@@ -24,8 +24,8 @@ TODO: Write history
 
 ## Credits
 
-[]()
+[Esteban Rocha](https://github.com/Esteban-Rocha)
 
 ## License
 
-Project under the [3-Clause BSD License](LICENSE)
+Project under the [BSD-3-Clause License](LICENSE)
