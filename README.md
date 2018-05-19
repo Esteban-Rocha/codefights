@@ -1,4 +1,4 @@
-# Esteban CodeFight Arcade Solutions Compendium
+# CodeFight Arcade Solutions Compendium
 
 TODO: Write a project description
 
