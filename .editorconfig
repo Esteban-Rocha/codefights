@@ -1,34 +1,30 @@
-#=================================================
-# Multi purpose .editorconfig template
-#=================================================
-# This file is for unifying the coding style for different editors and IDEs
-# editorconfig.org
+#
+# Base .editorconfig Template
+#
+# @author Esteban Rocha
+# @link   https://github.com/Esteban-Rocha
+#
 
 # top-most EditorConfig file
 root = true
 
-# For anything and everything use:
-## Unix-style newlines with a newline ending
-## Trim trailing whitespace to remove any whitespace characters preceding newline characters
-## Charset set to UTF-8
-## Indentation style set to tabs for cleanliness and small compression gains
+#
+# Unix-style newlines with a newline ending
+# Trim trailing whitespace to remove any whitespace characters preceding newline characters
+# Charset set to UTF-8
+# Indentation style set to spaces
+#
 [*]
 charset                  = utf-8
 end_of_line              = lf
-indent_size              = 2
-indent_style             = tab
+indent_size              = 4
+indent_style             = space
 insert_final_newline     = true
 trim_trailing_whitespace = true
 
-# For specific file extension use:
-## Matches the exact files extension
-## For multiple files with brace expansion notation [*.{js,py}]
-[*.yml]
-indent_size  = 2
-indent_style = space
+# Markdown
+[*.md]
+trim_trailing_whitespace = false
 
-# For specific config files use:
-## Matches the exact files either package.json || .travis.yml || webpack.config.js
-[{gulpfile.js,package.json,.travis.yml,webpack.config.js}]
-indent_size  = 2
-indent_style = tab
+[*.{yml,yaml}]
+indent_size = 2

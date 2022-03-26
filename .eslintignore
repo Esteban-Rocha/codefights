@@ -1,0 +1,19 @@
+####
+## ESLint: Ignore files
+##
+## @author      Esteban Rocha
+## @link        https://github.com/Esteban-Rocha
+## @since       1.0.0
+####
+
+# WordPress ignore
+/*
+!/js
+/build/*
+!/src/*
+
+
+# Global ignore
+**/*.min.js
+**/node_modules/**
+**/vendor/**

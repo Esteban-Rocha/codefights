@@ -1,0 +1,17 @@
+####
+## Prettier: Ignore files
+##
+## @author      Esteban Rocha
+## @link        https://github.com/Esteban-Rocha
+## @since       1.0.0
+####
+
+# Global ignore
+**/*.html
+**/*.twig
+**/*.liquid
+**/*.min.*
+**/*.min.css
+**/*.min.js
+**/node_modules/**
+**/vendor/**
