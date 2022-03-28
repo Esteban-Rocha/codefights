@@ -1,10 +1,9 @@
-####
-## Prettier: Ignore files
-##
-## @author      Esteban Rocha
-## @link        https://github.com/Esteban-Rocha
-## @since       1.0.0
-####
+#
+# Prettier Ignore files
+# @author Esteban Rocha
+# @link   https://github.com/Esteban-Rocha
+#
+
 
 # Global ignore
 **/*.html

@@ -1,6 +1,5 @@
 #
 # Base .gitignore Template
-#
 # @author Esteban Rocha
 # @link   https://github.com/Esteban-Rocha
 #
@@ -439,3 +438,6 @@ typings/
 # *.css.map
 *.sass.map
 *.scss.map
+
+# Ts
+*.tsbuildinfo

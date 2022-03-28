@@ -1,12 +1,9 @@
 /**
  * ESLint: Config
- *
  * @author      Esteban Rocha
  * @link        https://github.com/Esteban-Rocha
- * @since       1.0.0
  */
 
-// Readable settings flags
 const OFF = 0;
 const WARN = 1;
 const ERROR = 2;
