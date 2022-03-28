@@ -23,15 +23,20 @@ function checkPalindrome(inputString: string): boolean {
     return reverseInputString === inputString ? true : false;
 }
 
-// Run tests
-console.log(
-    checkPalindrome("Doc, note: I dissent. A fast never prevents a fatness. I diet on cod")
-);
-console.log(
-    checkPalindrome(
-        "Is it crazy how saying sentences backwards creates backwards sentences saying how crazy it is"
-    )
-);
-console.log(checkPalindrome("5885"));
-console.log(checkPalindrome("z"));
-console.log(checkPalindrome("zzzazzazz"));
+/**
+ * @return void
+ */
+export function test(): void {
+    // Run tests
+    console.log(
+        checkPalindrome("Doc, note: I dissent. A fast never prevents a fatness. I diet on cod")
+    );
+    console.log(
+        checkPalindrome(
+            "Is it crazy how saying sentences backwards creates backwards sentences saying how crazy it is"
+        )
+    );
+    console.log(checkPalindrome("5885"));
+    console.log(checkPalindrome("z"));
+    console.log(checkPalindrome("zzzazzazz"));
+}

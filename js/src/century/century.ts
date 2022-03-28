@@ -6,22 +6,22 @@
  */
 
 /**
- * centuryFromYear - Given a year, return the century it is in.
- *
- * @param       integer
- * @return      result: number - integer
+ * @param  year number
+ * @return number
  */
-function centuryFromYear(param1: number) {
+function centuryFromYear(year: number) {
     // Get param and calculate it's century
-    const result: number = Math.trunc((param1 + 99) / 100);
-    // Log to pass and 100% score on tests
-    console.log(result);
-
+    const result: number = Math.trunc((year + 99) / 100);
     return result;
 }
 
-// Run tests
-console.log(centuryFromYear(5584));
-console.log(centuryFromYear(295));
-console.log(centuryFromYear(2013));
-console.log(centuryFromYear(1495));
+/**
+ * @return void
+ */
+export function test(): void {
+    // Run tests
+    console.log(centuryFromYear(5584));
+    console.log(centuryFromYear(295));
+    console.log(centuryFromYear(2013));
+    console.log(centuryFromYear(1495));
+}

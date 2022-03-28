@@ -5,21 +5,25 @@
  * @author      Esteban Rocha
  * @link        https://github.com/Esteban-Rocha
  */
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.test = void 0;
 /**
- * centuryFromYear - Given a year, return the century it is in.
- *
- * @param       integer
- * @return      result: number - integer
+ * @param  year number
+ * @return number
  */
-function centuryFromYear(param1) {
+function centuryFromYear(year) {
     // Get param and calculate it's century
-    const result = Math.trunc((param1 + 99) / 100);
-    // Log to pass and 100% score on tests
-    console.log(result);
+    const result = Math.trunc((year + 99) / 100);
     return result;
 }
-// Run tests
-console.log(centuryFromYear(5584));
-console.log(centuryFromYear(295));
-console.log(centuryFromYear(2013));
-console.log(centuryFromYear(1495));
+/**
+ * @return void
+ */
+function test() {
+    // Run tests
+    console.log(centuryFromYear(5584));
+    console.log(centuryFromYear(295));
+    console.log(centuryFromYear(2013));
+    console.log(centuryFromYear(1495));
+}
+exports.test = test;

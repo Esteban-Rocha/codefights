@@ -1,41 +1,39 @@
 "use strict";
+// @ts-check
 /**
- * JavaScript Adjacent Elements Product Module
- *
- * @package     CodeFights
- * @subpackage  Adjacent Elements Product
- * @author      Esteban Rocha
- * @link        https://github.com/Esteban-Rocha
- * @since       1.0.0
+ * JavaScript Adjacent Elements Product Challenge
+ * @author Esteban Rocha
+ * @link   https://github.com/Esteban-Rocha
  */
-/* jshint esversion: 6 */
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.test = void 0;
 /**
- * adjacentElementsProduct - Given an array of integers, find the pair of adjacent elements
- * that has the largest product and return that product.
- *
- * @param       inputArray: number[] - array
- * @return      max_of_array: any - integer
+ * @param  inputArray: number[]
+ * @return number
  */
 function adjacentElementsProduct(inputArray) {
-    let a__Max = [];
+    const totalSum = [];
     // Iterate array values
     for (let index = 0; index <= inputArray.length; index++) {
-        let checkMaxProduct = inputArray[index];
+        const checkMaxProduct = inputArray[index];
         // Delete undefined NaN value at final cycle
         // and get Math.max of array products as return value
-        if (index == inputArray.length) {
-            a__Max.pop();
-            // Use spread syntax https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
-            let max_of_array = Math.max(...a__Max);
-            console.log(max_of_array);
+        if (index === inputArray.length) {
+            totalSum.pop();
+            const max_of_array = Math.max(...totalSum);
             return max_of_array;
         }
-        else {
-            // Calculate product of current array element
-            a__Max.push(checkMaxProduct * inputArray[index + 1]);
-        }
+        // Calculate product of current array element
+        totalSum.push(checkMaxProduct * inputArray[index + 1]);
     }
 }
-// Run tests
-let a__Products = [9, 5, 10, 2, 24, -1, -48];
-console.log(adjacentElementsProduct(a__Products));
+/**
+ * @return void
+ */
+function test() {
+    // Run tests
+    const a__Products = [9, 5, 10, 2, 1, -1, -48];
+    console.log(adjacentElementsProduct(a__Products));
+    console.log(adjacentElementsProduct([1, 2, 3, 0]));
+}
+exports.test = test;

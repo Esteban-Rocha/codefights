@@ -9,7 +9,7 @@
         "alwaysStrict": true,
         "incremental": true,
         "jsx": "react",
-        "module": "CommonJS",
+        "module": "commonjs",
         "noImplicitAny": true,
         "outDir": "js/build",
         "preserveWatchOutput": true,
