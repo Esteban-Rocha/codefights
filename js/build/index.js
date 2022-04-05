@@ -1,7 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const Add = require("./add/add");
-Add.test();
+const Fizz = require("./fizzBuzz/fizzBuzz");
+// Add.test();
 // Adjacent.test();
+Fizz.test();
 // Century.test();
 // palindrome.test();

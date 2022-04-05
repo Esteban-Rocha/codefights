@@ -28,5 +28,8 @@ declare(strict_types=1);
 spl_autoload_register();
 
 use Challenges\Add;
+use Challenges\FizzBuzz;
 
-// echo Add::run(1, 2);
+print_r(Add::run(541, 561));
+echo "\n\n-----------------\n\n";
+print_r(FizzBuzz::run(100));
